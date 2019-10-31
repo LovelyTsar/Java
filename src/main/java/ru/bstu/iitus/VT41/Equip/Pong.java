@@ -1,7 +1,9 @@
 package ru.bstu.iitus.VT41.Equip;
 
+import lombok.Data;
 import ru.bstu.iitus.VT41.SportsEquipment;
 
+@Data
 public class Pong extends SportsEquipment
 {
     String color;
@@ -9,14 +11,14 @@ public class Pong extends SportsEquipment
 
     public Pong()
     {
-        name="Pong";
-        sporttype="PingPong";
+        name="Теннисная ракетка";
+        sporttype="Теннис";
         mass=1;
         color="blue";
         material="wood";
     }
     public  void init()
     {
-        System.out.printf("Mass: %d Color: %s  Material: %s  \n",mass, color, material);
+        System.out.printf("Масса: "+mass+" Цвет: " +color+ " Материал: "+material);
     }
 }

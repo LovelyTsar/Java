@@ -1,20 +1,23 @@
 package ru.bstu.iitus.VT41.Equip;
 
+import lombok.Data;
+
+@Data
 public class BaskBall extends Ball
 {
 
     public BaskBall()
     {
-        name="BaskBall";
-        sporttype="Besketball";
+        name="Баскетбольный мяч";
+        sporttype="Баскетбол";
         mass=1;
         radius=5;
-        color="orange";
+        color="Оранжевый";
     }
 
 
     public  void init()
     {
-        System.out.printf("Mass: %d Radius: %d  Color: %s  \n",mass, radius, color);
+        Systemlog.info("Масса: " + mass + " Радиус: " + radius + " Цвет: " + color);
     }
 }

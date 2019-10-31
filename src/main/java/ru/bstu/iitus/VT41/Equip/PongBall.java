@@ -1,17 +1,20 @@
 package ru.bstu.iitus.VT41.Equip;
 
+import lombok.Data;
+
+@Data
 public class PongBall extends Ball
 {
     public PongBall()
     {
-        name="PongBall";
-        sporttype="PingPong";
+        name="Теннисный мяч";
+        sporttype="Теннис";
         mass=1;
         radius=1;
-        color="white";
+        color="Белый";
     }
     public  void init()
     {
-        System.out.printf("Mass: %d Radius: %d  Color: %s  \n", mass, radius, color);
+        Systemlog.info("Масса: "+ mass+" Радиус: "+ radius+" Цвет: " +color);
     }
 }
